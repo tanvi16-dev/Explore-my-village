@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExploreMyVillage — Discover the Village. Experience the Culture.</title>
+<meta name="description" content="Connect with real villages across India. Book authentic local experiences, meet local hosts, and shop village-made products.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#home" class="logo">
+      <svg class="logo__mark" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 3C15 3 6 9 6 17C6 21.9706 10.0294 26 15 26C19.9706 26 24 21.9706 24 17C24 9 15 3 15 3Z" fill="#6E8F4E"/>
+        <path d="M15 26V13" stroke="#FAF6EF" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M15 17C15 17 11.5 15.5 10.5 12.5" stroke="#FAF6EF" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M15 21C15 21 19 19.2 20 15.8" stroke="#FAF6EF" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      <span>ExploreMyVillage</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#villages">Explore</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#marketplace">Local Products</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <button class="btn btn--ghost" id="hostBtn">Become a Local Host</button>
+      <button class="btn btn--outline" id="loginBtn">Login</button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#villages">Explore</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#marketplace">Local Products</a>
+    <a href="#about">About</a>
+    <hr>
+    <button class="btn btn--ghost" id="hostBtnMobile">Become a Local Host</button>
+    <button class="btn btn--outline" id="loginBtnMobile">Login</button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero__media">
+    <img src="https://images.unsplash.com/photo-1758425405793-5dc285a41ad7?auto=format&fit=crop&w=1600&q=80" alt="Terraced village fields at golden hour">
+    <div class="hero__scrim"></div>
+  </div>
+
+  <div class="hero__content">
+    <p class="hero__kicker">🌿 A new way to travel</p>
+    <h1 class="hero__title">Discover the Village.<br><em>Experience</em> the Culture.</h1>
+    <p class="hero__sub">Explore authentic rural experiences, meet local communities, and support the people who make every village special.</p>
+
+    <div class="hero__cta">
+      <button class="btn btn--primary btn--lg" id="exploreVillagesBtn">Explore Villages</button>
+      <button class="btn btn--secondary btn--lg" id="planTripBtn">Plan My Trip</button>
+    </div>
+
+    <form class="search-box" id="searchForm">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#6E5A45" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="#6E5A45" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="text" id="searchInput" placeholder="Where do you want to explore? Try 'Konkan' or 'Himalayas'">
+      <button type="submit" class="btn btn--primary">Search</button>
+    </form>
+  </div>
+
+  <svg class="hero__wave" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,40 C 240,90 480,0 720,30 C 960,60 1200,10 1440,45 L1440,100 L0,100 Z" fill="#FAF6EF"/>
+  </svg>
+</section>
+
+<!-- ============ TRUST / IMPACT ============ -->
+<section class="impact">
+  <p class="impact__line">Travel locally. Experience authentically. Support communities.</p>
+  <div class="impact__stats">
+    <div class="stat">
+      <span class="stat__num" data-count="50">0</span><span class="stat__plus">+</span>
+      <span class="stat__label">Villages</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num" data-count="200">0</span><span class="stat__plus">+</span>
+      <span class="stat__label">Local Experiences</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num" data-count="1000">0</span><span class="stat__plus">+</span>
+      <span class="stat__label">Local Hosts</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED VILLAGES ============ -->
+<section class="section" id="villages">
+  <div class="section__head">
+    <div>
+      <p class="section__tag">Explore</p>
+      <h2 class="section__title">Villages waiting to welcome you</h2>
+    </div>
+    <p class="section__desc">Every village on ExploreMyVillage is home to real families who open their doors, fields and kitchens to travellers like you.</p>
+  </div>
+
+  <div class="village-grid">
+
+    <article class="village-card">
+      <img src="https://images.unsplash.com/photo-1587033354790-ca85c78d79af?auto=format&fit=crop&w=800&q=80" alt="Coastal village of Aambadi in Konkan">
+      <div class="village-card__body">
+        <div class="village-card__top">
+          <h3>Aambadi</h3>
+          <span class="village-card__state">Maharashtra</span>
+        </div>
+        <p>A palm-fringed Konkan village known for Alphonso mango orchards, red-tiled homes and quiet fishing coves.</p>
+        <button class="btn btn--outline village-card__btn">Explore Village</button>
+      </div>
+    </article>
+
+    <article class="village-card">
+      <img src="https://images.unsplash.com/photo-1649304496800-fc79f57d6a1a?auto=format&fit=crop&w=800&q=80" alt="Himalayan mountain village of Tirthan">
+      <div class="village-card__body">
+        <div class="village-card__top">
+          <h3>Tirthan Valley</h3>
+          <span class="village-card__state">Himachal Pradesh</span>
+        </div>
+        <p>Wooden Kathkuni houses tucked beside a glacial river, surrounded by apple orchards and pine forest trails.</p>
+        <button class="btn btn--outline village-card__btn">Explore Village</button>
+      </div>
+    </article>
+
+    <article class="village-card">
+      <img src="https://images.unsplash.com/photo-1592782480535-847fa6dbff97?auto=format&fit=crop&w=800&q=80" alt="Desert village of Khimsar in Rajasthan">
+      <div class="village-card__body">
+        <div class="village-card__top">
+          <h3>Khimsar</h3>
+          <span class="village-card__state">Rajasthan</span>
+        </div>
+        <p>Sand dunes, camel herders and centuries-old block-printing workshops on the edge of the Thar Desert.</p>
+        <button class="btn btn--outline village-card__btn">Explore Village</button>
+      </div>
+    </article>
+
+    <article class="village-card">
+      <img src="https://images.unsplash.com/photo-1563279036-8ae92c62ca4f?auto=format&fit=crop&w=800&q=80" alt="Backwater village of Kumarakom in Kerala">
+      <div class="village-card__body">
+        <div class="village-card__top">
+          <h3>Kumarakom</h3>
+          <span class="village-card__state">Kerala</span>
+        </div>
+        <p>Coconut-lined backwaters, houseboat families and generations-old coir-weaving traditions.</p>
+        <button class="btn btn--outline village-card__btn">Explore Village</button>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="section__more">
+    <button class="btn btn--secondary">View All 50+ Villages</button>
+  </div>
+</section>
+
+<!-- ============ FEATURED EXPERIENCES ============ -->
+<section class="section section--tint" id="experiences">
+  <div class="section__head">
+    <div>
+      <p class="section__tag">Experiences</p>
+      <h2 class="section__title">Spend a day the way locals do</h2>
+    </div>
+    <p class="section__desc">Hosted directly by villagers — every booking puts income straight into the hands of the people who show you around.</p>
+  </div>
+
+  <div class="exp-grid">
+
+    <article class="exp-card">
+      <div class="exp-card__img"><img src="https://images.unsplash.com/photo-1671449530655-09b0c8e562c5?auto=format&fit=crop&w=700&q=80" alt="Farm experience"></div>
+      <div class="exp-card__body">
+        <span class="exp-card__badge">Farming</span>
+        <h3>Sunrise Farm Experience</h3>
+        <p class="exp-card__host">Hosted by Ramesh Patil</p>
+        <div class="exp-card__meta">
+          <span>⏱ 3 hours</span>
+          <span class="exp-card__price">₹899 / person</span>
+        </div>
+        <button class="btn btn--outline exp-card__btn">View Experience</button>
+      </div>
+    </article>
+
+    <article class="exp-card">
+      <div class="exp-card__img"><img src="https://loremflickr.com/500/360/indian,cooking/all?lock=322" alt="Traditional cooking experience"></div>
+      <div class="exp-card__body">
+        <span class="exp-card__badge">Cooking</span>
+        <h3>Traditional Cooking with Amma</h3>
+        <p class="exp-card__host">Hosted by Lakshmi Devi</p>
+        <div class="exp-card__meta">
+          <span>⏱ 2.5 hours</span>
+          <span class="exp-card__price">₹749 / person</span>
+        </div>
+        <button class="btn btn--outline exp-card__btn">View Experience</button>
+      </div>
+    </article>
+
+    <article class="exp-card">
+      <div class="exp-card__img"><img src="https://loremflickr.com/500/360/pottery,craft/all?lock=323" alt="Handicraft workshop"></div>
+      <div class="exp-card__body">
+        <span class="exp-card__badge">Craft</span>
+        <h3>Pottery &amp; Handicraft Workshop</h3>
+        <p class="exp-card__host">Hosted by Suresh Kumbhar</p>
+        <div class="exp-card__meta">
+          <span>⏱ 2 hours</span>
+          <span class="exp-card__price">₹649 / person</span>
+        </div>
+        <button class="btn btn--outline exp-card__btn">View Experience</button>
+      </div>
+    </article>
+
+    <article class="exp-card">
+      <div class="exp-card__img"><img src="https://loremflickr.com/500/360/forest,trail/all?lock=324" alt="Village nature walk"></div>
+      <div class="exp-card__body">
+        <span class="exp-card__badge">Nature</span>
+        <h3>Village Nature Walk</h3>
+        <p class="exp-card__host">Hosted by Anil Gawde</p>
+        <div class="exp-card__meta">
+          <span>⏱ 1.5 hours</span>
+          <span class="exp-card__price">₹399 / person</span>
+        </div>
+        <button class="btn btn--outline exp-card__btn">View Experience</button>
+      </div>
+    </article>
+
+    <article class="exp-card">
+      <div class="exp-card__img"><img src="https://loremflickr.com/500/360/india,dance/all?lock=325" alt="Local cultural experience"></div>
+      <div class="exp-card__body">
+        <span class="exp-card__badge">Culture</span>
+        <h3>Folk Music &amp; Dance Evening</h3>
+        <p class="exp-card__host">Hosted by the Bhil Community Circle</p>
+        <div class="exp-card__meta">
+          <span>⏱ 2 hours</span>
+          <span class="exp-card__price">₹599 / person</span>
+        </div>
+        <button class="btn btn--outline exp-card__btn">View Experience</button>
+      </div>
+    </article>
+
+    <article class="exp-card">
+      <div class="exp-card__img"><img src="https://images.unsplash.com/photo-1633410195091-bd66114cef5f?auto=format&fit=crop&w=700&q=80" alt="Traditional farming experience"></div>
+      <div class="exp-card__body">
+        <span class="exp-card__badge">Farming</span>
+        <h3>Traditional Rice Paddy Farming</h3>
+        <p class="exp-card__host">Hosted by Manoj Shetty</p>
+        <div class="exp-card__meta">
+          <span>⏱ 4 hours</span>
+          <span class="exp-card__price">₹999 / person</span>
+        </div>
+        <button class="btn btn--outline exp-card__btn">View Experience</button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ AI TRIP PLANNER ============ -->
+<section class="planner" id="planner">
+  <div class="planner__inner">
+    <div class="planner__text">
+      <p class="section__tag section__tag--light">Trip Planner</p>
+      <h2>Plan Your Perfect<br>Village Experience</h2>
+      <p>Tell us your budget, available time and interests. Our AI will create a personalized rural travel plan for you — matching you with villages, hosts and experiences that fit.</p>
+    </div>
+
+    <form class="planner__form" id="plannerForm">
+      <label>
+        Budget (₹)
+        <input type="number" id="budgetInput" placeholder="e.g. 8000" min="0">
+      </label>
+      <label>
+        Number of Days
+        <input type="number" id="daysInput" placeholder="e.g. 3" min="1">
+      </label>
+      <label>
+        Interests
+        <select id="interestsInput">
+          <option value="">Select an interest</option>
+          <option>Nature &amp; Wildlife</option>
+          <option>Food &amp; Cooking</option>
+          <option>Art &amp; Handicrafts</option>
+          <option>Farming &amp; Rural Life</option>
+          <option>Culture &amp; Festivals</option>
+        </select>
+      </label>
+      <label>
+        Preferred Activities
+        <input type="text" id="activitiesInput" placeholder="e.g. trekking, pottery, farm stay">
+      </label>
+      <button type="submit" class="btn btn--primary btn--lg planner__btn">Create My Itinerary</button>
+    </form>
+  </div>
+
+  <div class="planner__result" id="plannerResult" hidden>
+    <div class="planner__result-inner">
+      <button class="planner__close" id="closeResult" aria-label="Close">✕</button>
+      <p class="section__tag">Your Sample Itinerary</p>
+      <h3 id="resultTitle">A 3-Day Rural Escape</h3>
+      <div class="itinerary" id="itineraryDays"></div>
+      <p class="planner__note">This is a sample preview. Full AI-personalized planning connects once our backend is live.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARKETPLACE ============ -->
+<section class="section" id="marketplace">
+  <div class="section__head">
+    <div>
+      <p class="section__tag">Marketplace</p>
+      <h2 class="section__title">Take a Piece of the Village Home</h2>
+    </div>
+    <p class="section__desc">Shop directly from village artisans and farmers — handmade, homegrown, and fairly paid for.</p>
+  </div>
+
+  <div class="product-grid">
+
+    <article class="product-card">
+      <img src="https://loremflickr.com/420/420/bamboo,basket/all?lock=411" alt="Handmade bamboo craft">
+      <div class="product-card__body">
+        <h3>Handwoven Bamboo Basket</h3>
+        <p class="product-card__village">from Tirthan Valley</p>
+        <div class="product-card__row">
+          <span class="product-card__price">₹450</span>
+          <button class="btn btn--outline btn--sm">View Product</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://loremflickr.com/420/420/mango,fruit/all?lock=412"alt="Organic Alphonso mangoes">
+      <div class="product-card__body">
+        <h3>Organic Alphonso Mangoes</h3>
+        <p class="product-card__village">from Aambadi</p>
+        <div class="product-card__row">
+          <span class="product-card__price">₹899 / dozen</span>
+          <button class="btn btn--outline btn--sm">View Product</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://loremflickr.com/420/420/pickle,jar/all?lock=413" alt="Traditional homemade pickle">
+      <div class="product-card__body">
+        <h3>Traditional Mango Pickle</h3>
+        <p class="product-card__village">from Kumarakom</p>
+        <div class="product-card__row">
+          <span class="product-card__price">₹220</span>
+          <button class="btn btn--outline btn--sm">View Product</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://loremflickr.com/420/420/blockprint,textile/all?lock=414" alt="Handloom textile">
+      <div class="product-card__body">
+        <h3>Hand-block Printed Cotton Stole</h3>
+        <p class="product-card__village">from Khimsar</p>
+        <div class="product-card__row">
+          <span class="product-card__price">₹650</span>
+          <button class="btn btn--outline btn--sm">View Product</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ WHY EXPLOREMYVILLAGE ============ -->
+<section class="section section--tint" id="about">
+  <div class="section__head section__head--center">
+    <p class="section__tag">Why ExploreMyVillage</p>
+    <h2 class="section__title">Travel that gives back</h2>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <div class="feature-card__icon">🌾</div>
+      <h3>Authentic Experiences</h3>
+      <p>No staged shows — every experience is real daily life, shared by the people who live it.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-card__icon">🤝</div>
+      <h3>Support Local Communities</h3>
+      <p>Most of what you pay goes directly to the host family, farmer or artisan — not a middleman.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-card__icon">🗺️</div>
+      <h3>Discover Hidden Villages</h3>
+      <p>Go beyond the guidebook to villages you won't find in a typical tour itinerary.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-card__icon">🌱</div>
+      <h3>Sustainable Tourism</h3>
+      <p>Small-group, low-impact travel that protects the land, water and culture of every village.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA — BECOME A HOST ============ -->
+<section class="cta">
+  <div class="cta__inner">
+    <h2>Have a skill, product or<br>experience to share?</h2>
+    <p>Become a Local Host and earn by sharing your village with travellers from around the world.</p>
+    <button class="btn btn--primary btn--lg" id="ctaHostBtn">Become a Local Host</button>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="#home" class="logo logo--footer">
+        <svg width="26" height="26" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 3C15 3 6 9 6 17C6 21.9706 10.0294 26 15 26C19.9706 26 24 21.9706 24 17C24 9 15 3 15 3Z" fill="#6E8F4E"/>
+        </svg>
+        <span>ExploreMyVillage</span>
+      </a>
+      <p>Connecting travellers with real villages and the people who make them special — one authentic experience at a time.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="YouTube">YT</a>
+        <a href="#" aria-label="X / Twitter">X</a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Quick Links</h4>
+      <a href="#villages">Explore Villages</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#marketplace">Local Products</a>
+      <a href="#planner">Trip Planner</a>
+      <a href="#about">About Us</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>For Hosts</h4>
+      <a href="#">Become a Local Host</a>
+      <a href="#">Host Resources</a>
+      <a href="#">Community Guidelines</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <a href="mailto:hello@exploremyvillage.in">hello@exploremyvillage.in</a>
+      <a href="tel:+911234567890">+91 12345 67890</a>
+      <p>Pune, Maharashtra, India</p>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>© 2025 ExploreMyVillage. All rights reserved.</p>
+    <div class="footer__legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MODALS ============ -->
+<div class="modal-overlay" id="loginModal">
+  <div class="modal">
+    <button class="modal__close" data-close-modal>✕</button>
+    <h3>Welcome back</h3>
+    <p class="modal__sub">Log in to book experiences and manage your trips.</p>
+    <form class="modal__form" id="loginForm">
+      <label>Email
+        <input type="email" required placeholder="you@example.com">
+      </label>
+      <label>Password
+        <input type="password" required placeholder="••••••••">
+      </label>
+      <button type="submit" class="btn btn--primary btn--lg">Login</button>
+    </form>
+    <p class="modal__switch">New here? <button type="button" id="switchToHost">Become a Local Host</button></p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="hostModal">
+  <div class="modal">
+    <button class="modal__close" data-close-modal>✕</button>
+    <h3>Become a Local Host</h3>
+    <p class="modal__sub">Tell us about you and your village — our team will reach out to help you get started.</p>
+    <form class="modal__form" id="hostForm">
+      <label>Full Name
+        <input type="text" required placeholder="Your name">
+      </label>
+      <label>Village Name
+        <input type="text" required placeholder="Your village">
+      </label>
+      <label>Phone Number
+        <input type="tel" required placeholder="+91">
+      </label>
+      <label>What will you offer?
+        <select required>
+          <option value="">Select one</option>
+          <option>An Experience (farming, cooking, craft...)</option>
+          <option>A Local Product</option>
+          <option>Homestay / Accommodation</option>
+        </select>
+      </label>
+      <button type="submit" class="btn btn--primary btn--lg">Submit Application</button>
+    </form>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
